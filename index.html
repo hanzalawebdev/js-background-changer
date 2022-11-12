@@ -49,6 +49,12 @@
         #black {
             background-color: black;
         }
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid black; */
+        }
     </style>
 </head>
 
@@ -60,7 +66,7 @@
         <span id="black" class="btn" onclick="changeBg('#000000')"></span>
     </div>
     <h1 class="text">About Us</h1>
-
+    <br><br>
     <p class="text">
 
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam enim veniam fuga quidem quis consectetur
@@ -85,6 +91,10 @@
         odio eum tenetur quo quibusdam culpa dignissimos voluptates architecto quaerat ex, unde laboriosam?
 
     </p>
+    <br><br>
+    <div class="img">
+        <img src="./about-us.jpg" >
+    </div>
 
     <script>
        function changeBg(color){
