@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 50px 100px;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        #container{
+            text-align: right;
+            letter-spacing: 5.5px;
+        }
+        .btn {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid gray 2px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        #white {
+            background-color: white;
+        }
+
+        #aqua {
+            background-color: aqua;
+        }
+
+        #violet {
+            background-color: violet;
+        }
+
+        #black {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <span id="white" class="btn" onclick="changeBg('#ffffff')"></span>
+        <span id="aqua" class="btn" onclick="changeBg('#00ffff')"></span>
+        <span id="violet" class="btn" onclick="changeBg('#8f00ff')"></span>
+        <span id="black" class="btn" onclick="changeBg('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+
+    <p class="text">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam enim veniam fuga quidem quis consectetur
+        repudiandae similique, doloremque autem ipsam esse illo officiis in minus aut quaerat odio quos facere, labore
+        soluta, harum eos. Quia nemo atque numquam, eum modi porro iusto dicta maxime nihil ut, harum facilis fuga
+        voluptate, aspernatur ratione voluptatum nesciunt? Rerum atque et ad nostrum quisquam dolore nisi, eligendi
+        tenetur quos, dolor voluptas iure maxime expedita fuga aliquam corrupti nam sit eius facere pariatur. Voluptate,
+        hic quis? Eius impedit non vero dolore sint quam assumenda adipisci officia at iusto officiis aspernatur eaque
+        reprehenderit illo maxime, mollitia, nostrum fugit quia exercitationem repudiandae sit culpa omnis nam
+        architecto. Libero dolores quos ullam nihil fugit porro reiciendis quis maxime aut deserunt molestias facere
+        commodi eaque ad exercitationem magni laboriosam pariatur expedita corporis error, consequuntur quas recusandae
+        neque! Eius eveniet non quod veritatis, perferendis exercitationem laboriosam nobis a, commodi sequi earum
+        repellat. Voluptatibus molestiae repellat non facilis enim, sint quisquam delectus optio impedit quas illum amet
+        unde ex similique earum porro ut? Ipsam beatae at optio id dolores reiciendis sit mollitia odit laboriosam. Ut
+        delectus dolorem quasi ea ullam sit omnis, praesentium inventore vitae ratione molestias vero nobis veritatis
+        alias necessitatibus ducimus neque veniam! Est ex dolore dicta molestiae fugit ipsa amet ipsum, deserunt officia
+        iusto voluptatem illo laudantium aut. Debitis eum libero esse enim consequatur id labore blanditiis molestiae.
+        Impedit natus temporibus sunt eaque iste at quidem esse! Consequatur ipsum quisquam est officiis dolores,
+        voluptatum nisi, vero exercitationem magnam quidem eum reprehenderit ea expedita rem nobis, aliquid cum
+        voluptatem deleniti error quod corporis repellendus. Quia tempora, numquam doloremque dolor error earum
+        consequatur ipsam dicta eligendi dignissimos incidunt tenetur sed omnis pariatur! Cumque, et facere sed atque,
+        odio eum tenetur quo quibusdam culpa dignissimos voluptates architecto quaerat ex, unde laboriosam?
+
+    </p>
+
+    <script>
+       function changeBg(color){
+        document.body.style.backgroundColor = color;
+        let txt = document.getElementsByClassName('text');
+        if(color == '#000000'){
+            for(let elm of txt){
+                elm.style.color = "white";
+            }
+        } else {
+            for(let elm of txt){
+                elm.style.color = "black";
+            }
+        }
+       } 
+    </script>
+</body>
+
+</html>
